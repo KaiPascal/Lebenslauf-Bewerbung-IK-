@@ -11,33 +11,74 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    background:#f4f4f4;
+    background:#eef3f8;
     padding:30px;
 }
 
 .cv{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+.header{
+    background:linear-gradient(135deg,#4A90E2,#67B26F);
+    color:white;
+    padding:40px;
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.photo{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    overflow:hidden;
+    border:6px solid rgba(255,255,255,.8);
+    flex-shrink:0;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.header-text h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.header-text h3{
+    font-weight:400;
+    margin-bottom:15px;
+}
+
+.header-text p{
+    max-width:700px;
+    line-height:1.6;
+}
+
+.content{
     display:grid;
     grid-template-columns:320px 1fr;
-    background:white;
-    box-shadow:0 0 20px rgba(0,0,0,0.15);
 }
 
 .sidebar{
-    background:#2f3a4a;
-    color:white;
-    padding:40px 30px;
+    background:#f8fbff;
+    padding:35px;
 }
 
-.sidebar h1{
-    font-size:32px;
-    margin-bottom:30px;
-    font-weight:700;
+.main{
+    padding:35px;
 }
 
 .section{
@@ -45,36 +86,37 @@ body{
 }
 
 .section h2{
-    font-size:15px;
-    letter-spacing:3px;
-    margin-bottom:15px;
-    text-transform:uppercase;
-    border-bottom:1px solid rgba(255,255,255,.3);
+    color:#4A90E2;
+    font-size:22px;
+    margin-bottom:20px;
+    border-bottom:2px solid #dbe7f5;
     padding-bottom:8px;
 }
 
-.sidebar p{
-    margin-bottom:8px;
-    line-height:1.5;
+.contact p{
+    margin-bottom:10px;
 }
 
 .skill{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:8px;
+    margin-bottom:15px;
 }
 
-.main{
-    padding:40px;
+.skill span{
+    display:block;
+    margin-bottom:5px;
+    font-size:14px;
 }
 
-.main h2{
-    color:#2f3a4a;
-    margin-bottom:20px;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    border-bottom:2px solid #ddd;
-    padding-bottom:10px;
+.bar{
+    height:10px;
+    background:#dce6f2;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:linear-gradient(90deg,#4A90E2,#67B26F);
 }
 
 .job{
@@ -82,24 +124,23 @@ body{
 }
 
 .date{
+    color:#4A90E2;
     font-weight:bold;
-    color:#666;
     margin-bottom:5px;
 }
 
 .position{
     font-size:18px;
-    font-weight:bold;
-    color:#2f3a4a;
+    font-weight:600;
 }
 
 .company{
     color:#777;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 ul{
-    margin-left:20px;
+    padding-left:20px;
 }
 
 li{
@@ -107,8 +148,9 @@ li{
 }
 
 .footer{
-    margin-top:40px;
+    text-align:right;
     color:#777;
+    margin-top:40px;
 }
 
 </style>
@@ -118,105 +160,151 @@ li{
 
 <div class="cv">
 
-    <aside class="sidebar">
+    <div class="header">
 
-        <h1>Julia Göring</h1>
-
-        <div class="section">
-            <h2>Kontakt</h2>
-            <p>📞 +49 (0) 176 6471 4940</p>
-            <p>✉ 7788julia@gmail.com</p>
-            <p>Schneideräckerstr. 55</p>
-            <p>70378 Stuttgart</p>
+        <div class="photo">
+            <img src="bewerbungsfoto.jpg" alt="Julia Göring">
         </div>
 
-        <div class="section">
-            <h2>Persönliche Daten</h2>
-            <p>Geburtsdatum: 06.07.1979</p>
-            <p>Geburtsort: Tchirtschik (Usbekistan)</p>
-            <p>Familienstand: geschieden, 1 Kind</p>
-            <p>Nationalität: deutsch</p>
+        <div class="header-text">
+
+            <h1>Julia Göring</h1>
+
+            <h3>Produktions- und Montagemitarbeiterin</h3>
+
+            <p>
+            Erfahrene Mitarbeiterin mit langjähriger Berufserfahrung
+            in den Bereichen Feinwerkmechanik, Elektrotechnik,
+            Qualitätskontrolle und Montage. Sorgfältige,
+            zuverlässige und teamorientierte Arbeitsweise mit
+            hohem Qualitätsbewusstsein.
+            </p>
+
         </div>
 
-        <div class="section">
-            <h2>Sprachen</h2>
-            <div class="skill"><span>Deutsch</span><span>●●●●●</span></div>
-            <div class="skill"><span>Russisch</span><span>●●●●●</span></div>
-            <div class="skill"><span>Englisch</span><span>●●○○○</span></div>
-        </div>
+    </div>
 
-        <div class="section">
-            <h2>EDV Kenntnisse</h2>
-            <div class="skill"><span>Linux</span><span>●●○○○</span></div>
-            <div class="skill"><span>MS Word</span><span>●●●○○</span></div>
-            <div class="skill"><span>MS Excel</span><span>●●●○○</span></div>
-            <div class="skill"><span>E-Mail</span><span>●●●●●</span></div>
-        </div>
+    <div class="content">
 
-    </aside>
+        <aside class="sidebar">
 
-    <main class="main">
+            <div class="section contact">
+                <h2>Kontakt</h2>
+                <p>📞 +49 176 64714940</p>
+                <p>✉ 7788julia@gmail.com</p>
+                <p>📍 Stuttgart</p>
+            </div>
 
-        <h2>Beruflicher Werdegang</h2>
+            <div class="section">
+                <h2>Stärken</h2>
 
-        <div class="job">
-            <div class="date">01/2021 – 02/2025</div>
-            <div class="position">Elektrotechnik / Feinwerkmechanik</div>
-            <div class="company">METEC AG, Stuttgart</div>
+                <div class="skill">
+                    <span>Zuverlässigkeit</span>
+                    <div class="bar"><div class="fill" style="width:95%"></div></div>
+                </div>
 
-            <ul>
-                <li>Bestücken und Löten von Leiterplatten</li>
-                <li>Baugruppenmontage</li>
-                <li>Funktionskontrollen</li>
-                <li>Qualitätskontrolle</li>
-                <li>Kommissionieren</li>
-                <li>Reparatur</li>
-            </ul>
-        </div>
+                <div class="skill">
+                    <span>Sorgfalt</span>
+                    <div class="bar"><div class="fill" style="width:95%"></div></div>
+                </div>
 
-        <div class="job">
-            <div class="date">Seit 11/2011</div>
-            <div class="position">Pressezustellservicekraft</div>
-            <div class="company">PS Pressevertrieb-Service GmbH, Stuttgart</div>
-        </div>
+                <div class="skill">
+                    <span>Teamfähigkeit</span>
+                    <div class="bar"><div class="fill" style="width:90%"></div></div>
+                </div>
 
-        <div class="job">
-            <div class="date">11/2011 – 05/2012</div>
-            <div class="position">Aushilfstätigkeit im Lebensmittelbereich</div>
-            <div class="company">Centa, Stuttgart</div>
-        </div>
+                <div class="skill">
+                    <span>Belastbarkeit</span>
+                    <div class="bar"><div class="fill" style="width:85%"></div></div>
+                </div>
 
-        <div class="job">
-            <div class="date">06/2006 – 06/2009</div>
-            <div class="position">Produktions- und Montagemitarbeiterin Metallbau</div>
-            <div class="company">Berger & Herrmann, Stuttgart-Weilimdorf</div>
-        </div>
+            </div>
 
-        <h2>Schulischer Werdegang</h2>
+            <div class="section">
+                <h2>Sprachen</h2>
 
-        <div class="job">
-            <div class="date">09/2010 – 03/2012</div>
-            <div class="position">Abendgymnasium</div>
-            <div class="company">FBD Bildungspark, Stuttgart</div>
-        </div>
+                <div class="skill">
+                    <span>Deutsch</span>
+                    <div class="bar"><div class="fill" style="width:100%"></div></div>
+                </div>
 
-        <div class="job">
-            <div class="date">09/2001 – 12/2001</div>
-            <div class="position">Berufliche Weiterbildung</div>
-            <div class="company">BeFF – Berufliche Förderung von Frauen e.V.</div>
-        </div>
+                <div class="skill">
+                    <span>Russisch</span>
+                    <div class="bar"><div class="fill" style="width:100%"></div></div>
+                </div>
 
-        <div class="job">
-            <div class="date">1986 – 1996</div>
-            <div class="position">Realschule</div>
-            <div class="company">Tschirtschik (Usbekistan)</div>
-        </div>
+                <div class="skill">
+                    <span>Englisch</span>
+                    <div class="bar"><div class="fill" style="width:45%"></div></div>
+                </div>
 
-        <div class="footer">
-            Fellbach, 03.06.2026
-        </div>
+            </div>
 
-    </main>
+            <div class="section">
+                <h2>EDV</h2>
+
+                <div class="skill">
+                    <span>Linux</span>
+                    <div class="bar"><div class="fill" style="width:40%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>MS Word</span>
+                    <div class="bar"><div class="fill" style="width:65%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>MS Excel</span>
+                    <div class="bar"><div class="fill" style="width:60%"></div></div>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <main class="main">
+
+            <div class="section">
+
+                <h2>Berufserfahrung</h2>
+
+                <div class="job">
+                    <div class="date">01/2021 – 02/2025</div>
+                    <div class="position">Elektrotechnik / Feinwerkmechanik</div>
+                    <div class="company">METEC AG</div>
+                </div>
+
+                <div class="job">
+                    <div class="date">Seit 11/2011</div>
+                    <div class="position">Pressezustellservicekraft</div>
+                    <div class="company">PS Pressevertrieb-Service GmbH</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Ausbildung & Weiterbildung</h2>
+
+                <div class="job">
+                    <div class="date">2010 – 2012</div>
+                    <div class="position">Abendgymnasium</div>
+                </div>
+
+                <div class="job">
+                    <div class="date">2001</div>
+                    <div class="position">Berufliche Weiterbildung</div>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                Fellbach, 03.06.2026
+            </div>
+
+        </main>
+
+    </div>
 
 </div>
 
