@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julia Göring – Lebenslauf</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:30px;
+}
+
+.cv{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:320px 1fr;
+    background:white;
+    box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+
+.sidebar{
+    background:#2f3a4a;
+    color:white;
+    padding:40px 30px;
+}
+
+.sidebar h1{
+    font-size:32px;
+    margin-bottom:30px;
+    font-weight:700;
+}
+
+.section{
+    margin-bottom:35px;
+}
+
+.section h2{
+    font-size:15px;
+    letter-spacing:3px;
+    margin-bottom:15px;
+    text-transform:uppercase;
+    border-bottom:1px solid rgba(255,255,255,.3);
+    padding-bottom:8px;
+}
+
+.sidebar p{
+    margin-bottom:8px;
+    line-height:1.5;
+}
+
+.skill{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+}
+
+.main{
+    padding:40px;
+}
+
+.main h2{
+    color:#2f3a4a;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    border-bottom:2px solid #ddd;
+    padding-bottom:10px;
+}
+
+.job{
+    margin-bottom:25px;
+}
+
+.date{
+    font-weight:bold;
+    color:#666;
+    margin-bottom:5px;
+}
+
+.position{
+    font-size:18px;
+    font-weight:bold;
+    color:#2f3a4a;
+}
+
+.company{
+    color:#777;
+    margin-bottom:10px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+li{
+    margin-bottom:5px;
+}
+
+.footer{
+    margin-top:40px;
+    color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <aside class="sidebar">
+
+        <h1>Julia Göring</h1>
+
+        <div class="section">
+            <h2>Kontakt</h2>
+            <p>📞 +49 (0) 176 6471 4940</p>
+            <p>✉ 7788julia@gmail.com</p>
+            <p>Schneideräckerstr. 55</p>
+            <p>70378 Stuttgart</p>
+        </div>
+
+        <div class="section">
+            <h2>Persönliche Daten</h2>
+            <p>Geburtsdatum: 06.07.1979</p>
+            <p>Geburtsort: Tchirtschik (Usbekistan)</p>
+            <p>Familienstand: geschieden, 1 Kind</p>
+            <p>Nationalität: deutsch</p>
+        </div>
+
+        <div class="section">
+            <h2>Sprachen</h2>
+            <div class="skill"><span>Deutsch</span><span>●●●●●</span></div>
+            <div class="skill"><span>Russisch</span><span>●●●●●</span></div>
+            <div class="skill"><span>Englisch</span><span>●●○○○</span></div>
+        </div>
+
+        <div class="section">
+            <h2>EDV Kenntnisse</h2>
+            <div class="skill"><span>Linux</span><span>●●○○○</span></div>
+            <div class="skill"><span>MS Word</span><span>●●●○○</span></div>
+            <div class="skill"><span>MS Excel</span><span>●●●○○</span></div>
+            <div class="skill"><span>E-Mail</span><span>●●●●●</span></div>
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <h2>Beruflicher Werdegang</h2>
+
+        <div class="job">
+            <div class="date">01/2021 – 02/2025</div>
+            <div class="position">Elektrotechnik / Feinwerkmechanik</div>
+            <div class="company">METEC AG, Stuttgart</div>
+
+            <ul>
+                <li>Bestücken und Löten von Leiterplatten</li>
+                <li>Baugruppenmontage</li>
+                <li>Funktionskontrollen</li>
+                <li>Qualitätskontrolle</li>
+                <li>Kommissionieren</li>
+                <li>Reparatur</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="date">Seit 11/2011</div>
+            <div class="position">Pressezustellservicekraft</div>
+            <div class="company">PS Pressevertrieb-Service GmbH, Stuttgart</div>
+        </div>
+
+        <div class="job">
+            <div class="date">11/2011 – 05/2012</div>
+            <div class="position">Aushilfstätigkeit im Lebensmittelbereich</div>
+            <div class="company">Centa, Stuttgart</div>
+        </div>
+
+        <div class="job">
+            <div class="date">06/2006 – 06/2009</div>
+            <div class="position">Produktions- und Montagemitarbeiterin Metallbau</div>
+            <div class="company">Berger & Herrmann, Stuttgart-Weilimdorf</div>
+        </div>
+
+        <h2>Schulischer Werdegang</h2>
+
+        <div class="job">
+            <div class="date">09/2010 – 03/2012</div>
+            <div class="position">Abendgymnasium</div>
+            <div class="company">FBD Bildungspark, Stuttgart</div>
+        </div>
+
+        <div class="job">
+            <div class="date">09/2001 – 12/2001</div>
+            <div class="position">Berufliche Weiterbildung</div>
+            <div class="company">BeFF – Berufliche Förderung von Frauen e.V.</div>
+        </div>
+
+        <div class="job">
+            <div class="date">1986 – 1996</div>
+            <div class="position">Realschule</div>
+            <div class="company">Tschirtschik (Usbekistan)</div>
+        </div>
+
+        <div class="footer">
+            Fellbach, 03.06.2026
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
